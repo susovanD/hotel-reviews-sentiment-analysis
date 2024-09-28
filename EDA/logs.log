@@ -11879,3 +11879,202 @@ ValueError: Number of classes in y_true not equal to the number of columns in 'y
 2024-09-28 13:09:59,790:INFO:Plot type: pipeline
 2024-09-28 13:10:00,711:INFO:Visual Rendered Successfully
 2024-09-28 13:10:01,233:INFO:plot_model() successfully completed......................................
+2024-09-28 13:28:42,405:INFO:Initializing plot_model()
+2024-09-28 13:28:42,416:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001C1EE7BD150>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=123, verbose=0,
+                       warm_start=False), plot=confusion_matrix, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2024-09-28 13:28:42,417:INFO:Checking exceptions
+2024-09-28 13:28:43,826:INFO:Preloading libraries
+2024-09-28 13:28:43,908:INFO:Copying training dataset
+2024-09-28 13:28:43,909:INFO:Plot type: confusion_matrix
+2024-09-28 13:29:03,492:INFO:Fitting Model
+2024-09-28 13:29:03,519:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+
+2024-09-28 13:29:03,522:INFO:Scoring test/hold-out set
+2024-09-28 13:29:04,196:INFO:Visual Rendered Successfully
+2024-09-28 13:29:04,474:INFO:plot_model() successfully completed......................................
+2024-09-28 13:30:53,083:INFO:Initializing plot_model()
+2024-09-28 13:30:53,083:INFO:plot_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001C1EE7BD150>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=123, verbose=0,
+                       warm_start=False), plot=auc, scale=1, save=False, fold=None, fit_kwargs=None, plot_kwargs=None, groups=None, feature_name=None, label=False, verbose=True, system=True, display=None, display_format=None)
+2024-09-28 13:30:53,084:INFO:Checking exceptions
+2024-09-28 13:30:54,178:INFO:Preloading libraries
+2024-09-28 13:30:54,210:INFO:Copying training dataset
+2024-09-28 13:30:54,211:INFO:Plot type: auc
+2024-09-28 13:31:18,299:INFO:Fitting Model
+2024-09-28 13:31:18,300:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\base.py:493: UserWarning: X does not have valid feature names, but RandomForestClassifier was fitted with feature names
+  warnings.warn(
+
+2024-09-28 13:31:18,303:INFO:Scoring test/hold-out set
+2024-09-28 13:31:19,518:INFO:Visual Rendered Successfully
+2024-09-28 13:31:19,860:INFO:plot_model() successfully completed......................................
+2024-09-28 13:31:38,051:INFO:Initializing predict_model()
+2024-09-28 13:31:38,052:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001C1EE7BD150>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=123, verbose=0,
+                       warm_start=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C1FAEC98A0>)
+2024-09-28 13:31:38,052:INFO:Checking exceptions
+2024-09-28 13:31:38,053:INFO:Preloading libraries
+2024-09-28 13:31:48,903:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\pycaret\utils\generic.py:585: UserWarning: Traceback (most recent call last):
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_ranking.py", line 706, in _multiclass_roc_auc_score
+    if not np.allclose(1, y_score.sum(axis=1)):
+                          ^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\numpy\core\_methods.py", line 49, in _sum
+    return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_ranking.py", line 634, in roc_auc_score
+    return _multiclass_roc_auc_score(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_ranking.py", line 706, in _multiclass_roc_auc_score
+    if not np.allclose(1, y_score.sum(axis=1)):
+                          ^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\numpy\core\_methods.py", line 49, in _sum
+    return umr_sum(a, axis, dtype, out, keepdims, initial, where)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+numpy.exceptions.AxisError: axis 1 is out of bounds for array of dimension 1
+
+  warnings.warn(traceback.format_exc())
+
+2024-09-28 13:31:48,908:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Positive') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-09-28 13:31:48,922:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Positive') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-09-28 13:31:48,925:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-09-28 13:31:48,930:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Positive') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-09-28 13:32:32,868:INFO:Initializing predict_model()
+2024-09-28 13:32:32,869:INFO:predict_model(self=<pycaret.classification.oop.ClassificationExperiment object at 0x000001C1EE7BD150>, estimator=RandomForestClassifier(bootstrap=True, ccp_alpha=0.0, class_weight=None,
+                       criterion='gini', max_depth=None, max_features='sqrt',
+                       max_leaf_nodes=None, max_samples=None,
+                       min_impurity_decrease=0.0, min_samples_leaf=1,
+                       min_samples_split=2, min_weight_fraction_leaf=0.0,
+                       monotonic_cst=None, n_estimators=100, n_jobs=-1,
+                       oob_score=False, random_state=123, verbose=0,
+                       warm_start=False), probability_threshold=None, encoded_labels=False, raw_score=False, round=4, verbose=True, ml_usecase=None, preprocess=True, encode_labels=<function _SupervisedExperiment.predict_model.<locals>.encode_labels at 0x000001C1EE73BF60>)
+2024-09-28 13:32:32,869:INFO:Checking exceptions
+2024-09-28 13:32:32,870:INFO:Preloading libraries
+2024-09-28 13:32:32,883:INFO:Set up data.
+2024-09-28 13:32:36,460:INFO:Set up index.
+2024-09-28 13:32:45,436:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\pycaret\internal\pipeline.py:111: UserWarning: Persisting input arguments took 2.60s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = pipeline._memory_transform(transformer, X, y)
+
+2024-09-28 13:32:47,992:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\pycaret\internal\pipeline.py:289: UserWarning: Persisting input arguments took 2.03s to run.If this happens often in your code, it can cause performance problems (results will be correct in all cases). The reason for this is probably some large input arguments for a wrapped function.
+  X, y = self._memory_full_transform(
+
+2024-09-28 13:32:48,384:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\pycaret\utils\generic.py:585: UserWarning: Traceback (most recent call last):
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\pycaret\utils\generic.py", line 580, in _calculate_metric
+    calculated_metric = score_func(y_test, target, sample_weight=weights, **kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_ranking.py", line 640, in roc_auc_score
+    return _average_binary_score(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_base.py", line 75, in _average_binary_score
+    return binary_metric(y_true, y_score, sample_weight=sample_weight)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_ranking.py", line 382, in _binary_roc_auc_score
+    raise ValueError(
+ValueError: Only one class present in y_true. ROC AUC score is not defined in that case.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\pycaret\utils\generic.py", line 583, in _calculate_metric
+    calculated_metric = score_func(y_test, target, **kwargs)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\pycaret\internal\metrics.py", line 144, in __call__
+    return self.score_func(y_true, y_pred, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\utils\_param_validation.py", line 213, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_ranking.py", line 640, in roc_auc_score
+    return _average_binary_score(
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_base.py", line 75, in _average_binary_score
+    return binary_metric(y_true, y_score, sample_weight=sample_weight)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_ranking.py", line 382, in _binary_roc_auc_score
+    raise ValueError(
+ValueError: Only one class present in y_true. ROC AUC score is not defined in that case.
+
+  warnings.warn(traceback.format_exc())
+
+2024-09-28 13:32:48,388:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Positive') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-09-28 13:32:48,390:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Recall is ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-09-28 13:32:48,395:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Positive') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-09-28 13:32:48,400:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-09-28 13:32:48,404:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_classification.py:1561: UserWarning: Note that pos_label (set to 'Positive') is ignored when average != 'binary' (got 'weighted'). You may use labels=[pos_label] to specify a single positive class.
+  warnings.warn(
+
+2024-09-28 13:32:48,407:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_classification.py:1509: UndefinedMetricWarning: F-score is ill-defined and being set to 0.0 in labels with no true nor predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
+
+2024-09-28 13:32:48,411:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_classification.py:386: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+
+2024-09-28 13:32:48,412:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_classification.py:708: RuntimeWarning: invalid value encountered in scalar divide
+  k = np.sum(w_mat * confusion) / np.sum(w_mat * expected)
+
+2024-09-28 13:32:48,416:WARNING:d:\Python\Data Science\Machine Learning\Sentiment Analysis\env\Lib\site-packages\sklearn\metrics\_classification.py:386: UserWarning: A single label was found in 'y_true' and 'y_pred'. For the confusion matrix to have the correct shape, use the 'labels' parameter to pass all known labels.
+  warnings.warn(
+
