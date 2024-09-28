@@ -4,8 +4,9 @@
 This repository contains a comprehensive analysis of hotel reviews from Trip Advisor. The dataset includes textual reviews along with ratings ranging from 1 to 5. The goal is to analyze sentiments expressed in the reviews and predict the overall sentiment based on both text and numerical ratings.
 
 ## Folder Structure
+```
 /trip-advisor-sentiment-analysis │ ├── data/ │ ├── raw/ # Original dataset containing hotel reviews │ ├── processed/ # Processed data ready for analysis and modeling │ ├── notebooks/ # Jupyter notebooks documenting the analysis process │ ├── models/ # Saved models and results from model predictions │ ├── src/ # Source code for data processing and model training │ ├── data_preprocessing.py # Script for data cleaning and preprocessing │ ├── model_training.py # Script for training and evaluating models │ ├── requirements.txt # List of packages and dependencies └── README.md # Project documentation
-
+```
 
 ## Packages Used
 - **pandas**: For data manipulation and analysis.
